@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
 
 <h2> Frequently Asked Questions</h2>
 
@@ -12,4 +11,5 @@
             {{ $faq->answer }}
         </h1>
     @endforeach
-</html>
+
+@endsection

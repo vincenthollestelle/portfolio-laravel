@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
 <body>
 
 <h2> The life of Vincent Hollestelle</h2>
@@ -11,4 +10,4 @@
 <h1>ik altijd al geïnteresseerd was in het werken met computers en om te gaan beginnen met zelf coderen. Zelf gebruik ik in het
     leven ook elke dag mijn computer voor bijvoorbeeld gamen.</h1>
 </body>
-</html>
+@endsection

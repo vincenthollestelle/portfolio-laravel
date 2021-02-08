@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
 
 <h2> Wie ben ik?</h2>
 
@@ -46,6 +45,5 @@
   </a>
   <div class="desc">Hierboven staat mijn favoriete serie</div>
 </div> </div>
-
-</body>
-</html>
+    
+@endsection

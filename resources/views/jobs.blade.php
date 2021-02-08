@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
+
 <h2>A view on the Job</h2>
 <button type="button" class="align-center collapsible">The jobs</button>
 <div class="content">
@@ -61,4 +61,4 @@ Microsoft haar eigen technieken zoals Microsoft365</h4>
 </script>
 </body>
 </div>
-</html>
+@endsection

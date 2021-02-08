@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
 
  <h2> My Motivation</h2>
  <button type="button" class="align-center collapsible">Theory</button>
@@ -101,4 +100,4 @@
     });
   }
 </script>
-</html>
+@endsection

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<?php require('..\resources\partials\nav.php')?>
+@extends('layout')
+@section('content')
 
 <h2>Study Monitor</h2>
 
@@ -151,4 +150,5 @@
 <p><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus">The page in MyHZ with your study progress</a></p>
 <p><a href="https://github.com/vincenthollestelle/vincenthollestelle.github.io">The Github enivronment of the study programme</a></p>
 
-</html>
+@endsection
+
