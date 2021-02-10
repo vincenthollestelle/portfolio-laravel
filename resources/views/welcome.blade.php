@@ -1,6 +1,5 @@
 @extends('layout')
 @section('content')
-<body>
 
 <h2> The life of Vincent Hollestelle</h2>
 <div class="box" style="margin-top: 3em;">Het HBO-niveau past bij mij omdat...</div>
@@ -9,5 +8,4 @@
 <div class="box" style="margin-top: 5em;">Deze opleiding past bij mijn persoonlijkheid omdat...</div>
 <h1>ik altijd al geïnteresseerd was in het werken met computers en om te gaan beginnen met zelf coderen. Zelf gebruik ik in het
     leven ook elke dag mijn computer voor bijvoorbeeld gamen.</h1>
-</body>
 @endsection

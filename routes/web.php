@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +18,8 @@ route::get('/', function() {
     return view('welcome');
 });
 
-use App\Http\Controllers\PageController;
 route::get('/{value}', [PageController::class, 'show']);
 
-use App\Http\Controllers\PostsController;
 route::get('/posts/{post}', [PostsController::class, 'show']);
 
 

@@ -11,119 +11,92 @@
     <th>Exam</th>
     <th>Grade</th>
   </tr>
+    @foreach($grades as $grade)
   <tr>
-    <td rowspan="3">1</td>
-    <td>Programme and Career Orientation</td>
-    <td style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Assessment</td>
-    <td></td>
+    <td>{{$grade->blok}}</td>
+    <td>{{$grade->course_name}}</td>
+    <td style="background-color: rgb(0, 255, 0);">{{$grade->ec}}</td>
+    <td>{{$grade->test_name}}</td>
+    <td>{{$grade->best_grade}}</td>
   </tr>
-  <tr>
-    <td>Computer Science Basics</td>
-    <td style="background-color: rgb(255, 115, 0);">7,5</td>
-    <td>Written</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Programming Basics</td>
-    <td style="background-color: rgb(255, 115, 0);">5</td>
-    <td>Case Study</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="3">2</td>
-    <td rowspan="2">Objected Oriented Programming</td>
-    <td rowspan="2" style="background-color: rgb(255, 115, 0);">10</td>
-    <td>Case Study</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Project</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Professional Skills 1</td>
-    <td style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="7">3</td>
-    <td rowspan="2">Framework Project 1</td>
-    <td rowspan="2" style="background-color: rgb(255, 115, 0);">5</td>
-    <td>Portfolio (1)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Portfolio (2)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Framework Development 1</td>
-    <td style="background-color: rgb(255, 115, 0);">5</td>
-    <td>Case Study</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Professional Working Environment</td>
-    <td style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Assessment</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="3">Professional Skills 2</td>
-    <td rowspan="3" style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Written (1)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Written (2)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="5">4</td>
-    <td>Framework Project 2</td>
-    <td style="background-color: rgb(255, 115, 0);">5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Framework Development 2</td>
-    <td style="background-color: rgb(255, 115, 0);">5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="3">Professional Skills 3</td>
-    <td rowspan="3" style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Written (1)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Written (2)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="2">Whenever</td>
-    <td>HZ Personality</td>
-    <td style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>IT Personality</td>
-    <td style="background-color: rgb(255, 115, 0);">2,5</td>
-    <td>Portfolio</td>
-    <td></td>
-  </tr>
+    @endforeach
+{{--  <tr>--}}
+{{--    <td rowspan="7">3</td>--}}
+{{--    <td rowspan="2">Framework Project 1</td>--}}
+{{--    <td rowspan="2" style="background-color: rgb(255, 115, 0);">5</td>--}}
+{{--    <td>Portfolio (1)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Portfolio (2)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Framework Development 1</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">5</td>--}}
+{{--    <td>Case Study</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Professional Working Environment</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">2,5</td>--}}
+{{--    <td>Assessment</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td rowspan="3">Professional Skills 2</td>--}}
+{{--    <td rowspan="3" style="background-color: rgb(255, 115, 0);">2,5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Written (1)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Written (2)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td rowspan="5">4</td>--}}
+{{--    <td>Framework Project 2</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Framework Development 2</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td rowspan="3">Professional Skills 3</td>--}}
+{{--    <td rowspan="3" style="background-color: rgb(255, 115, 0);">2,5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Written (1)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>Written (2)</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td rowspan="2">Whenever</td>--}}
+{{--    <td>HZ Personality</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">2,5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
+{{--  <tr>--}}
+{{--    <td>IT Personality</td>--}}
+{{--    <td style="background-color: rgb(255, 115, 0);">2,5</td>--}}
+{{--    <td>Portfolio</td>--}}
+{{--    <td></td>--}}
+{{--  </tr>--}}
 </table>
 
 <table>
