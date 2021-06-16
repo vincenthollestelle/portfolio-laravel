@@ -26,7 +26,7 @@ route::get('/', function() {
 
 route::resource('/articles', ArticleController::class);
 
-route::resource('/faq', FaqController::class);
+route::resource('/faq', FaqController::class)->middleware(['auth']);;
 
 route::get('/profile', [ProfileController::class, 'show']);
 
@@ -40,5 +40,4 @@ route::resource('/grades', GradeController::class);
 
 route::get('/posts/{post}', [PostsController::class, 'show']);
 
-
-
+require __DIR__.'/auth.php';

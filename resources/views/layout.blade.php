@@ -14,8 +14,13 @@
     <li class="{{ Request()->path() === 'motivation' ? 'active' : ''}}"><a href="motivation">My Motivation</a></li>
     <li class="{{ Request()->path() === 'jobs' ? 'active' : ''}}"><a href="jobs">View on the Job</a></li>
     <li class="{{ Request()->path() === 'faq' ? 'active': '' }}"><a href="faq">FAQ</a></li>
-    <li class="{{ Request()->path() === 'articles' ? 'active': ''}}"><a href="articles">Articles</a></li>
     <li style="float:right"><img src="/img/blub.png"></li>
+    @if (Auth::check())
+    <li style="float:right"><a>Logged in</a></li>
+    @else
+    <li style="float:right"><a href="/login">Login</a></li>
+    <li style="float:right"><a href="/register">Register</a></li>
+    @endif
 </ul>
 @yield('content')
 </body>
