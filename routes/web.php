@@ -20,6 +20,10 @@ use App\Http\Controllers\GradeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
+
 route::get('/', function() {
     return view('welcome');
 });
