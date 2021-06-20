@@ -16,7 +16,18 @@
     <li class="{{ Request()->path() === 'faq' ? 'active': '' }}"><a href="faq">FAQ</a></li>
     <li style="float:right"><img src="/img/blub.png"></li>
     @if (Auth::check())
-    <li style="float:right"><a>Logged in</a></li>
+    <!-- <li style="float:right"><a>Logged in</a></li> -->
+    <li style="float:right">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Log uit') }}
+                        </x-dropdown-link>
+                    </form>
+                  </li>
     @else
     <li style="float:right"><a href="/login">Login</a></li>
     <li style="float:right"><a href="/register">Register</a></li>

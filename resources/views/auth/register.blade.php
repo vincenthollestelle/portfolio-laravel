@@ -39,6 +39,10 @@
                                 required autocomplete="new-password" />
             </div>
 
+            <p style="color: grey; text-align: left; font-size: 15px;">Wachtwoord moet minimaal 8 karakters zijn met minimaal één hoofdletter en minimaal één cijfer!</p>
+            <br>
+            <p style="color: grey; text-align: left; font-size: 15px;">Je zou een password manager kunnen gebruiken om je wachtwoorden in op te slaan</p>
+
             <!-- Confirm Password -->
             <div class="mt-4">
                 <x-label for="password_confirmation" :value="__('Confirm Password')" />
