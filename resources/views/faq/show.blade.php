@@ -9,4 +9,7 @@
             <a class="link" href="/faq/{{ $faq->id }}">{{ $faq->question }}</a></div>
         <h1>{{ $faq->answer }}</h1>
 
+<form action="/faq/{{$faq->id }}/edit">
+<button type="submit" class="button is-link">Edit</button>
+</form>
 @endsection
